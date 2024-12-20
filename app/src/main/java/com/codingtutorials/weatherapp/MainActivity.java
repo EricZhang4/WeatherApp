@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
                 cityNameText.setText(jsonObject.getString("name"));
                 temperatureText.setText(String.format("%.0f°", temperature));
-                humidityText.setText("ic_"  + iconCode);
+                humidityText.setText(String.format("%.0f%%", humidity));
                 windText.setText(String.format("%.0f km/h", windSpeed));
                 descriptionText.setText(description);
             } catch (JSONException e)
